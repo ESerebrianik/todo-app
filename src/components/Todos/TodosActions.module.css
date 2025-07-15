@@ -1,0 +1,66 @@
+.todosActionsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 1.5rem;
+    border: 1px solid #e6e6e6;
+    color: #4d4d4d;
+    background-color: #ffffff;
+    max-width: 600px;
+  }
+  
+  .leftCount {
+    flex: 1;
+    text-align: left;
+    font-size: 14px;
+    color: #888;
+    padding-left: 8px;
+  }
+  
+  .radioButtons {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .radioButtons label {
+    font-size: 14px;
+    cursor: pointer;
+    color: #888;
+    padding: 2px 6px;         
+    border: 1px solid transparent; 
+    border-radius: 4px;
+    transition: all 0.2s ease;
+  }
+  
+  .radioButtons input {
+    display: none;
+    
+  }
+  
+  /* Стиль активного фильтра */
+  .radioButtons input:checked + label {
+    border-color: #e8d8d8;
+  }
+  
+  /* Кнопка справа */
+  .rightButton {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .todosActionsContainer button {
+    font-size: 14px;
+    background-color: transparent;
+    color: #888;
+    cursor: pointer;
+  }
+  
+  .todosActionsContainer button:hover {
+    color: #4d4d4d;
+    background-color: transparent;
+
+  }

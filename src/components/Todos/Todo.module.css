@@ -1,0 +1,65 @@
+.todo {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    font-size: 1.3rem;
+    border: 1px solid #e6e6e6;
+    color: #4d4d4d;
+    background-color: #ffffff;
+    max-width: 600px;
+  }
+  
+  .todoText {
+    width: 100%; 
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  .todoIcon {
+    margin-right: 10px;
+    color: teal;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .completedTodo {
+    color: #d9d9d9;
+    text-decoration: line-through ;
+  }
+    
+  .todoItem {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    color: #4d4d4d;
+  }
+  
+  /* Скрываем нативный чекбокс */
+  .todoItem input {
+    display: none;
+  }
+  
+  /* Кастомный круг */
+  .customCheckbox {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+  }
+  
+  /* Галочка */
+  .todoItem input:checked + .customCheckbox::after {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid #74a69d;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
